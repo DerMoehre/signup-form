@@ -1,0 +1,52 @@
+body {
+    --color-dark: #3d3d3d;
+    --color-highlight: #c96c26;
+    --color-light: #b1b1b1;
+    margin: 0;
+    background-color: var(--color-dark);
+}
+
+a {
+    color: var(--color-highlight);
+}
+
+.main_container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo_section {
+    position: relative;
+    width: 40%;
+    background-image: url(assets/badminton.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.logo_wrapper {
+    height: 200px;
+    width: 100%;
+    background-color: var(--color-dark);
+    opacity: 0.7;
+    margin-top: 250px;
+}
+
+.thank_note {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    background-color: var(--color-light);
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    opacity: 0.8;
+    color: var(--color-dark);
+}
+
+.form_section {
+    width: 60%;
+    /* height: 100%; */
+    background-color: var(--color-dark);
+}
