@@ -1,5 +1,5 @@
 body {
-    --color-dark: #3d3d3d;
+    --color-dark: #191919;
     --color-highlight: #c96c26;
     --color-light: #b1b1b1;
     margin: 0;
@@ -26,11 +26,41 @@ a {
 }
 
 .logo_wrapper {
+    display: flex;
     height: 200px;
     width: 100%;
     background-color: var(--color-dark);
     opacity: 0.7;
-    margin-top: 250px;
+    margin-top: 215px;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+}
+
+.logo {
+    max-height: 80%;
+    max-width: 100%;
+    filter: invert(43%) sepia(87%) saturate(577%) hue-rotate(346deg) brightness(93%) contrast(83%);
+    rotate: 142deg;
+}
+
+h1 {
+    font-weight: 400;
+    color: var(--color-light);
+    font-size: 48px;
+    font-family: 'Dosis';
+}
+
+h2 {
+    margin: 0;
+    font-weight: 300;
+    color: var(--color-dark);
+    font-size: 36px;
+    font-family: 'Dosis';
+}
+
+b, i {
+    color: var(--color-highlight);
 }
 
 .thank_note {
@@ -46,7 +76,56 @@ a {
 }
 
 .form_section {
+    display: flex;
+    flex-direction: column;
     width: 60%;
-    /* height: 100%; */
     background-color: var(--color-dark);
+}
+
+.top_section {
+    width: 100%;
+    height: 33%;
+    padding-left: 20px;
+}
+
+.text_section {
+    color: var(--color-light);
+    margin-top: 200px;
+    font-weight: 100;
+    font-size: 24px;
+    font-family: 'Dosis';
+    width: 80%;
+}
+
+.middle_section {
+    width: 100%;
+    height: 25%;
+    background-color: var(--color-light);
+    padding: 20px;
+}
+
+.input_fields {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    margin: 0;
+    padding: 10px 0px;
+    border: none;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 18px;
+    display: flex;
+    gap: 50px;
+}
+
+.field_name {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
 }
