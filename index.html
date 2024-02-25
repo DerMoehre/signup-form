@@ -37,37 +37,43 @@
                     <fieldset>
                             <div class="column">
                                 <label for="first_name">FIRST NAME</label>
-                                <input type="text" id="first_name" name="first_name">
+                                <input type="text" id="first_name" name="first_name" pattern="^[a-zA-Z]+$">
+                                <p class="error"></p>
                             </div>
                             <div class="column">
                                 <label for="last_name">LAST NAME</label>
-                                <input type="text" id="last_name" name="last_name">
+                                <input type="text" id="last_name" name="last_name" pattern="^[a-zA-Z]+$">
                             </div>
                     </fieldset>
                     <fieldset>
                         <div class="column">
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email">
+                            <label for="email">EMAIL*</label>
+                            <input type="email" id="email" name="email" required>
+                            <p class="error email_error"></p>
                         </div>
                         <div class="column">
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]*\/*(\+49)*[ ]*(\([0-9]+\))*([ ]*(-|–)*[ ]*[0-9]+)*">
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="column">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                            <label for="password">PASSWORD*</label>
+                            <input type="password" id="password" name="password" pattern=".{8,}" required>
+                            <p class="error password_error"></p>
                         </div>
                         <div class="column">
-                            <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm_password" name="confirm_password">
+                            <label for="confirm_password">CONFIRM PASSWORD*</label>
+                            <input type="password" id="confirm_password" name="confirm_password" pattern=".{8,}" required>
                         </div>
                     </fieldset>
                 </div>
             </div>
             <div class="bottom_section">
-
+                <button type="submit">Create Account</button>
+                <div class="account_login">
+                    Already have an account? <b>Log in</b>
+                </div>
             </div>
         </div>
 
